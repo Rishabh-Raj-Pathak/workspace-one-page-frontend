@@ -46,7 +46,7 @@ function Hero() {
 
         {/* Right section placeholder */}
         <div
-          className="flex-1 flex items-center justify-center pb-12 mr-5"
+          className="flex-1 flex items-center justify-center pb-12 mr-10"
           style={{ height: "400px" }}
         >
           <RightSection />
