@@ -27,7 +27,7 @@ function Hero() {
       <div className="flex flex-1 w-full items-center justify-center">
         {/* Left section */}
         <div
-          className="flex-1 flex items-center justify-center pb-12 ml-15"
+          className="flex-1 flex items-center justify-center pb-12 ml-10"
           style={{ height: "400px" }}
         >
           <LeftSection />

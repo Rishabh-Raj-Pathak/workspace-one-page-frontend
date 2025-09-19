@@ -16,7 +16,7 @@ function LeftSection() {
             className="w-20 h-20 shadow-lg rounded-xl p-2 rotate-6"
           />
           <svg
-            className="absolute top-22 left-13 w-33 h-20 rotate-35"
+            className="absolute top-22 left-14 w-36 h-20 rotate-35"
             viewBox="0 0 120 60"
           >
             <path
@@ -36,7 +36,7 @@ function LeftSection() {
             className="w-20 h-20 shadow-lg rounded-xl p-2 -rotate-10"
           />
           <svg
-            className="absolute top-1 left-21 w-63 h-24"
+            className="absolute top-1 left-21 w-66 h-24"
             viewBox="0 0 300 80"
           >
             <path
