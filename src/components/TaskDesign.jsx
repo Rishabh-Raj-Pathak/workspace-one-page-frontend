@@ -99,7 +99,7 @@ function TaskDesign() {
           <h2 className="text-white font-semibold text-lg">TODAY'S TASKS</h2>
           <div className="flex space-x-3 text-white">
             {/* Three dots menu icon */}
-            <div className="flex space-x-1">
+            <div className="flex space-x-1 rotate-90">
               <div className="w-1 h-1 bg-white rounded-full"></div>
               <div className="w-1 h-1 bg-white rounded-full"></div>
               <div className="w-1 h-1 bg-white rounded-full"></div>
