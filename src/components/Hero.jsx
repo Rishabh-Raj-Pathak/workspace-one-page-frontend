@@ -2,6 +2,7 @@ import React from "react";
 import Button from "./Button";
 import TaskDesign from "./TaskDesign";
 import LeftSection from "./LeftSection";
+import RightSection from "./RightSection";
 
 function Hero() {
   return (
@@ -45,9 +46,11 @@ function Hero() {
 
         {/* Right section placeholder */}
         <div
-          className="flex-1 flex items-center justify-center pb-12 overflow-hidden"
+          className="flex-1 flex items-center justify-center pb-12 mr-5"
           style={{ height: "400px" }}
-        ></div>
+        >
+          <RightSection />
+        </div>
       </div>
 
       {/* Whitish fade effect from bottom and sides */}

@@ -9,14 +9,14 @@ function LeftSection() {
       {/* Container for Dropbox, Slack, Teams */}
       <div className="relative">
         {/* Slack div */}
-        <div className="mb-16 translate-x-45 -translate-y-0 relative">
+        <div className="mb-16 translate-x-45 -translate-y-0 relative hover:scale-95 transition-all duration-300">
           <img
             src={slackLogo}
             alt="Slack"
             className="w-20 h-20 shadow-lg rounded-xl p-2 rotate-6"
           />
           <svg
-            className="absolute top-22 left-14 w-36 h-20 rotate-35"
+            className="absolute top-22 left-14 w-40 h-20 rotate-35"
             viewBox="0 0 120 60"
           >
             <path
@@ -29,14 +29,14 @@ function LeftSection() {
         </div>
 
         {/* Dropbox div */}
-        <div className="relative mb-24 -translate-x-4">
+        <div className="relative mb-24 translate-x-15 translate-y-5">
           <img
             src={dropboxLogo}
             alt="Dropbox"
             className="w-20 h-20 shadow-lg rounded-xl p-2 -rotate-10"
           />
           <svg
-            className="absolute top-1 left-21 w-66 h-24"
+            className="absolute top-1 left-21 w-50 h-24"
             viewBox="0 0 300 80"
           >
             <path

@@ -11,7 +11,7 @@ function TaskDesign() {
   return (
     <div className="relative flex justify-center items-center w-full max-w-2xl h-80">
       {/* shadow behind the task card */}
-      <div className="absolute z-5 bg-gradient-to-r from-blue-200 to-blue-300 rounded-t-[5rem] shadow-lg w-130 h-40 mt-15 opacity-90"></div>
+      <div className="absolute z-5 bg-gradient-to-r from-blue-100 to-blue-200 rounded-t-[5rem] shadow-lg w-130 h-40 mt-15 "></div>
 
       {/* Background paper layers for depth effect */}
       <div className="absolute z-5 bg-white rounded-lg shadow-md w-72 h-40 transform -translate-x-18 -rotate-3 opacity-90 mt-35">
