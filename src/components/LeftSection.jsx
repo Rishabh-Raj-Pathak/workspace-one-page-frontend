@@ -36,7 +36,7 @@ function LeftSection() {
             className="w-20 h-20 shadow-lg rounded-xl p-2 -rotate-10"
           />
           <svg
-            className="absolute top-5 left-21 w-63 h-24"
+            className="absolute top-1 left-21 w-63 h-24"
             viewBox="0 0 300 80"
           >
             <path
