@@ -29,7 +29,7 @@ function Button() {
       >
         <span className="relative z-10">Get Free Demo</span>
         <svg
-          className="relative z-10 ml-2 h-5 w-5 transition-transform duration-200 group-hover:translate-x-0.5"
+          className="relative z-10 ml-2 h-2 w-5 transition-transform duration-200 group-hover:translate-x-0.5"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"

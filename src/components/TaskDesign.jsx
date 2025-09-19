@@ -9,21 +9,41 @@ import calendarLogo from "../assets/calendar.png";
 
 function TaskDesign() {
   return (
-    <div className="relative flex justify-center items-center w-full max-w-2xl h-72">
+    <div className="relative flex justify-center items-center w-full max-w-2xl h-80">
+      {/* shadow behind the task card */}
+      <div className="absolute z-5 bg-blue-200 rounded-t-[5rem] shadow-lg w-130 h-40 mt-15 opacity-90"></div>
+
       {/* Background paper layers for depth effect */}
-      <div className="absolute z-5 bg-white rounded-lg shadow-md w-72 h-56 transform -translate-x-18 -rotate-3 opacity-90"></div>
-      <div className="absolute z-0 bg-white rounded-lg shadow-lg w-70 h-54 transform translate-x-15 rotate-2 opacity-90"></div>
+      <div className="absolute z-5 bg-white rounded-lg shadow-md w-72 h-40 transform -translate-x-18 -rotate-3 opacity-90 mt-35">
+        <div class="p-4 bg-white rounded-lg shadow w-48">
+          <div class="h-2 bg-gray-300 rounded mb-2 w-3/4"></div>
+          <div class="h-2 bg-gray-300 rounded mb-2 w-full"></div>
+          <div class="h-2 bg-gray-300 rounded mb-2 w-5/6"></div>
+          <div class="h-2 bg-gray-300 rounded mb-2 w-2/3"></div>
+          <div class="h-2 bg-gray-300 rounded mb-2 w-4/5"></div>
+          <div class="h-2 bg-gray-300 rounded mb-2 w-1/7"></div>
+        </div>
+      </div>
+      <div className="absolute z-5 bg-white rounded-lg shadow-lg w-90 h-44 transform translate-x-15 rotate-2 opacity-90 mt-35">
+        <div class="p-4 bg-white rounded-lg shadow w-90">
+          <div class="h-2 bg-gray-300 rounded mb-2 w-17/18"></div>
+          <div class="h-2 bg-gray-300 rounded mb-2 w-5/6"></div>
+          <div class="h-2 bg-gray-300 rounded mb-2 w-17/18"></div>
+        </div>
+      </div>
 
       {/* Main task card container */}
-      <div className="relative z-10 bg-white rounded-lg shadow-lg w-80 h-60 p-5 overflow-hidden">
+      <div
+        className="relative z-10 bg-white shadow-lg w-80 h-65 p-3 overflow-hidden mb-5 rotate-2 mt-7"
+        style={{
+          clipPath:
+            "polygon(0 0, calc(100% - 70px) 0, 100% 40px, 100% 100%, 0 100%)",
+        }}
+      >
         {/* Folded corner effect - Creates a paper-like folded corner visual */}
-        
-        {/* <div className="absolute top-0 right-0 w-20 h-20"> */}
-          {/* Shadow behind the fold - Creates depth by adding a shadow effect */}
-          {/* <div className="absolute top-0 right-0 w-full h-full bg-gray-200 transform rotate-45 origin-top-right translate-x-2 translate-y-2"></div> */}
-          {/* The actual folded corner - The visible folded corner with borders for realism */}
-          {/* <div className="absolute top-0 right-0 w-full h-full bg-gray-100 border-l border-b border-gray-300 transform rotate-45 origin-top-right"></div> */}
-        {/* </div> */}
+        <div className="absolute top-0 right-0 w-16 h-16 overflow-hidden z-50  shadow-lg">
+          <div className="absolute top-0 right-2 w-16 h-16 bg-white origin-top-right shadow-lg overflow-hidden"></div>
+        </div>
 
         {/* Task Item 1: New campaign */}
         <div className=" relative flex mb-4 justify-between bg-[#F0F0F0] pt-2 pl-2 pr-2 rounded-lg">
