@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import TaskDesign from "./TaskDesign";
+import LeftSection from "./LeftSection";
 
 function Hero() {
   return (
@@ -22,14 +23,31 @@ function Hero() {
         <Button />
       </div>
 
-      {/* Bottom section for TaskDesign - constrained to stay within hero div */}
-      <div
-        className="flex-shrink-0 w-full flex items-center justify-center pb-12 overflow-hidden"
-        style={{ height: "400px" }}
-      >
-        <div className="relative">
-          <TaskDesign />
+      {/* Parent flex container for left, middle, and right sections */}
+      <div className="flex flex-1 w-full items-center justify-center">
+        {/* Left section */}
+        <div
+          className="flex-1 flex items-center justify-center pb-12 ml-15"
+          style={{ height: "400px" }}
+        >
+          <LeftSection />
         </div>
+
+        {/* Middle section for TaskDesign - constrained to stay within hero div */}
+        <div
+          className="flex-1 flex items-center justify-center pb-12 "
+          style={{ height: "400px" }}
+        >
+          <div className="relative">
+            <TaskDesign />
+          </div>
+        </div>
+
+        {/* Right section placeholder */}
+        <div
+          className="flex-1 flex items-center justify-center pb-12 overflow-hidden"
+          style={{ height: "400px" }}
+        ></div>
       </div>
 
       {/* Whitish fade effect from bottom and sides */}
