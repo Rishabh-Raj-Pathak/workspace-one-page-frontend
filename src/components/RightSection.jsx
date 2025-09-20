@@ -13,7 +13,7 @@ function RightSection() {
       <div className="relative scale-75 sm:scale-85 md:scale-95 lg:scale-100">
         {/* Notion div */}
         <div
-          className="relative mb-8 sm:mb-12 lg:mb-16 -translate-x-12 sm:-translate-x-18 lg:-translate-x-25 hover:scale-90 transition-all duration-900 ease-out"
+          className="relative mb-8 sm:mb-12 lg:mb-16 -translate-x-12 sm:-translate-x-18 lg:-translate-x-25 hover:scale-90 transition-all duration-900 ease-out rounded-xl"
           onMouseEnter={() => setAppHover("notion", "right")}
           onMouseLeave={clearHover}
         >
@@ -49,7 +49,7 @@ function RightSection() {
 
         {/* Gmail div */}
         <div
-          className="relative mb-12 sm:mb-18 lg:mb-24 -translate-x-8 sm:-translate-x-12 lg:-translate-x-16 hover:scale-90 transition-all duration-900 ease-out"
+          className="relative mb-12 sm:mb-18 lg:mb-24 -translate-x-8 sm:-translate-x-12 lg:-translate-x-16 hover:scale-90 transition-all duration-900 ease-out rounded-xl"
           onMouseEnter={() => setAppHover("gmail", "right")}
           onMouseLeave={clearHover}
         >
@@ -85,13 +85,13 @@ function RightSection() {
 
         {/* Calendar div */}
         <div
-          className="relative -translate-x-18 sm:-translate-x-24 lg:-translate-x-30 -translate-y-6 sm:-translate-y-8 lg:-translate-y-10 hover:scale-90 transition-all duration-900 ease-out"
+          className="relative -translate-x-18 sm:-translate-x-24 lg:-translate-x-30 -translate-y-6 sm:-translate-y-8 lg:-translate-y-10 hover:scale-90 transition-all duration-900 ease-out rounded-xl"
           onMouseEnter={() => setAppHover("calendar", "right")}
           onMouseLeave={clearHover}
         >
           <svg
-            className="absolute top-3 sm:top-4 lg:top-5 right-14 sm:right-16 lg:right-20 w-28 sm:w-32 lg:w-40 h-14 sm:h-16 lg:h-20"
-            viewBox="0 0 160 80"
+            className="absolute top-3 sm:top-4 lg:top-5 right-14 sm:right-16 lg:right-20 w-36 sm:w-42 lg:w-50 h-14 sm:h-16 lg:h-20"
+            viewBox="0 0 240 80"
           >
             <defs>
               <linearGradient
@@ -106,7 +106,7 @@ function RightSection() {
               </linearGradient>
             </defs>
             <path
-              d="M 0 40 C 50 20, 100 60, 160 40"
+              d="M 0 40 C 50 20, 150 60, 240 40"
               stroke="url(#calendarGradient)"
               strokeWidth="2"
               fill="none"

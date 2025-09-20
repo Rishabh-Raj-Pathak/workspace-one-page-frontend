@@ -13,7 +13,7 @@ function LeftSection() {
       <div className="relative scale-75 sm:scale-85 md:scale-95 lg:scale-100">
         {/* Slack div */}
         <div
-          className="mb-8 sm:mb-12 lg:mb-16 translate-x-20 sm:translate-x-30 lg:translate-x-45 -translate-y-0 relative hover:scale-90 transition-all duration-900 ease-out"
+          className="mb-8 sm:mb-12 lg:mb-16 translate-x-20 sm:translate-x-30 lg:translate-x-45 -translate-y-0 relative hover:scale-90 transition-all duration-900 ease-out rounded-xl"
           onMouseEnter={() => setAppHover("slack", "left")}
           onMouseLeave={clearHover}
         >
@@ -49,7 +49,7 @@ function LeftSection() {
 
         {/* Dropbox div */}
         <div
-          className="relative mb-12 sm:mb-18 lg:mb-24 translate-x-8 sm:translate-x-12 lg:translate-x-15 translate-y-3 sm:translate-y-4 lg:translate-y-5 hover:scale-90 transition-all duration-900 ease-out"
+          className="relative mb-12 sm:mb-18 lg:mb-24 translate-x-8 sm:translate-x-12 lg:translate-x-15 translate-y-3 sm:translate-y-4 lg:translate-y-5 hover:scale-90 transition-all duration-900 ease-out rounded-xl"
           onMouseEnter={() => setAppHover("dropbox", "left")}
           onMouseLeave={clearHover}
         >
@@ -85,7 +85,7 @@ function LeftSection() {
 
         {/* Teams div */}
         <div
-          className="relative translate-x-24 sm:translate-x-32 lg:translate-x-40 -translate-y-6 sm:-translate-y-8 lg:-translate-y-10 hover:scale-90 transition-all duration-900 ease-out"
+          className="relative translate-x-24 sm:translate-x-32 lg:translate-x-20 -translate-y-6 sm:-translate-y-8 lg:-translate-y-10 hover:scale-90 transition-all duration-900 ease-out rounded-xl"
           onMouseEnter={() => setAppHover("teams", "left")}
           onMouseLeave={clearHover}
         >
@@ -95,8 +95,8 @@ function LeftSection() {
             className="w-14 sm:w-16 lg:w-20 h-14 sm:h-16 lg:h-20 shadow-2xl rounded-xl shadow-lg rotate-10"
           />
           <svg
-            className="absolute top-3 sm:top-4 lg:top-5 left-14 sm:left-16 lg:left-20 w-24 sm:w-28 lg:w-32 h-12 sm:h-14 lg:h-16"
-            viewBox="0 0 120 60"
+            className="absolute top-3 sm:top-4 lg:top-5 left-14 sm:left-16 lg:left-20 w-32 sm:w-36 lg:w-42 h-12 sm:h-14 lg:h-16"
+            viewBox="0 0 180 60"
           >
             <defs>
               <linearGradient
@@ -111,7 +111,7 @@ function LeftSection() {
               </linearGradient>
             </defs>
             <path
-              d="M 0 30 C 50 20, 70 40, 120 60"
+              d="M 0 30 C 50 20, 110 40, 180 50"
               stroke="url(#teamsGradient)"
               strokeWidth="2"
               fill="none"
