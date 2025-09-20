@@ -52,7 +52,7 @@ function Hero() {
   };
 
   return (
-    <div className="flex flex-col h-screen bg-[#F7F7F7] border-2 border-gray-200 shadow-md rounded-4xl mx-5 relative mb-10 min-h-[751px] overflow-hidden">
+    <div className="flex flex-col h-[775px] bg-[#F7F7F7] border-2 border-gray-200 shadow-md rounded-2xl sm:rounded-3xl lg:rounded-4xl mx-2 sm:mx-4 lg:mx-5 relative mb-4 sm:mb-6 lg:mb-10 overflow-hidden">
       {/* Dynamic background overlay */}
       {currentColors && (
         <div
@@ -62,52 +62,47 @@ function Hero() {
       )}
 
       {/* Header content section */}
-      <div className="flex flex-col items-center pt-8 lg:pt-15 relative z-10">
+      <div className="flex flex-col items-center pt-4 sm:pt-6 md:pt-8 lg:pt-12 xl:pt-15 px-4 sm:px-6 lg:px-8 relative z-10">
         <div
-          className={`text-6xl font-bold transition-all duration-600 ease-out pb-5 ${
+          className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold transition-all duration-600 ease-out pb-2 sm:pb-3 lg:pb-5 text-center ${
             currentColors ? "" : "text-[#888B90]"
           }`}
           style={getTextStyle()}
         >
           Every App. Every Task.
         </div>
-        <div className="text-6xl font-bold pr-6">One Workspace.</div>
-        <div className="text-[#747474] mt-5 mr-7 text-md max-w-lg text-center">
+        <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-center px-2">
+          One Workspace.
+        </div>
+        <div className="text-[#747474] mt-3 sm:mt-4 lg:mt-5 text-sm sm:text-base lg:text-md max-w-xs sm:max-w-md lg:max-w-lg text-center">
           Your tasks, reminders, and messages, flow together into a single,
           seamless workspace.
         </div>
       </div>
 
       {/* Middle section with Button - this will grow to fill available space */}
-      <div className="flex items-center justify-center mt-8 mb-8">
+      <div className="flex items-center justify-center mt-4 sm:mt-6 lg:mt-8 mb-4 sm:mb-6 lg:mb-8">
         <Button />
       </div>
 
       {/* Parent flex container for left, middle, and right sections */}
-      <div className="flex flex-1 w-full items-center justify-center">
+      <div className="flex flex-col lg:flex-row flex-1 w-full items-center justify-center px-2 sm:px-4 lg:px-0">
+        {/* Mobile/Tablet: Stack vertically, Desktop: Side by side */}
+
         {/* Left section */}
-        <div
-          className="flex-1 flex items-center justify-center pb-12 ml-10"
-          style={{ height: "400px" }}
-        >
+        <div className="w-full lg:flex-1 flex items-center justify-center pb-6 lg:pb-12 lg:ml-4 xl:ml-10 order-1 lg:order-1 min-h-[200px] sm:min-h-[250px] lg:min-h-[400px]">
           <LeftSection />
         </div>
 
         {/* Middle section for TaskDesign - constrained to stay within hero div */}
-        <div
-          className="flex-1 flex items-center justify-center pb-12 "
-          style={{ height: "400px" }}
-        >
+        <div className="w-full lg:flex-1 flex items-center justify-center pb-6 lg:pb-12 order-3 lg:order-2 min-h-[250px] sm:min-h-[300px] lg:min-h-[400px]">
           <div className="relative">
             <TaskDesign />
           </div>
         </div>
 
         {/* Right section placeholder */}
-        <div
-          className="flex-1 flex items-center justify-center pb-12 mr-10"
-          style={{ height: "400px" }}
-        >
+        <div className="w-full lg:flex-1 flex items-center justify-center pb-6 lg:pb-12 lg:mr-4 xl:mr-10 order-2 lg:order-3 min-h-[200px] sm:min-h-[250px] lg:min-h-[400px]">
           <RightSection />
         </div>
       </div>

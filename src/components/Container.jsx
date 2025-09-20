@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
-function Container({children}) {
-  return (
-    <div>
-      {children}
-    </div>
-  )
+function Container({ children }) {
+  return <div className="relative min-h-screen">{children}</div>;
 }
 
-export default Container
+export default Container;

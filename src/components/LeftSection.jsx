@@ -8,22 +8,22 @@ function LeftSection() {
   const { setAppHover, clearHover } = useHover();
 
   return (
-    <div className="relative w-full h-full flex flex-col justify-center items-start">
+    <div className="relative w-full h-full flex flex-col justify-center items-center lg:items-start">
       {/* Container for Dropbox, Slack, Teams */}
-      <div className="relative">
+      <div className="relative scale-75 sm:scale-85 md:scale-95 lg:scale-100">
         {/* Slack div */}
         <div
-          className="mb-16 translate-x-45 -translate-y-0 relative hover:scale-90 transition-all duration-900 ease-out"
+          className="mb-8 sm:mb-12 lg:mb-16 translate-x-20 sm:translate-x-30 lg:translate-x-45 -translate-y-0 relative hover:scale-90 transition-all duration-900 ease-out"
           onMouseEnter={() => setAppHover("slack", "left")}
           onMouseLeave={clearHover}
         >
           <img
             src={slackLogo}
             alt="Slack"
-            className="w-20 h-20 shadow-2xl rounded-xl p-2 rotate-6"
+            className="w-14 sm:w-16 lg:w-20 h-14 sm:h-16 lg:h-20 shadow-2xl rounded-xl p-1.5 sm:p-2 rotate-6"
           />
           <svg
-            className="absolute top-22 left-14 w-40 h-20 rotate-35 translate-y-3 -translate-x-5"
+            className="absolute top-16 sm:top-18 lg:top-22 left-10 sm:left-12 lg:left-14 w-28 sm:w-32 lg:w-40 h-14 sm:h-16 lg:h-20 rotate-35 translate-y-2 sm:translate-y-2.5 lg:translate-y-3 -translate-x-3 sm:-translate-x-4 lg:-translate-x-5"
             viewBox="0 0 120 60"
           >
             <defs>
@@ -49,17 +49,17 @@ function LeftSection() {
 
         {/* Dropbox div */}
         <div
-          className="relative mb-24 translate-x-15 translate-y-5 hover:scale-90 transition-all duration-900 ease-out"
+          className="relative mb-12 sm:mb-18 lg:mb-24 translate-x-8 sm:translate-x-12 lg:translate-x-15 translate-y-3 sm:translate-y-4 lg:translate-y-5 hover:scale-90 transition-all duration-900 ease-out"
           onMouseEnter={() => setAppHover("dropbox", "left")}
           onMouseLeave={clearHover}
         >
           <img
             src={dropboxLogo}
             alt="Dropbox"
-            className="w-20 h-20 shadow-2xl rounded-xl p-2 -rotate-10"
+            className="w-14 sm:w-16 lg:w-20 h-14 sm:h-16 lg:h-20 shadow-2xl rounded-xl p-1.5 sm:p-2 -rotate-10"
           />
           <svg
-            className="absolute top-1 left-21 w-50 h-24"
+            className="absolute top-0.5 sm:top-1 left-16 sm:left-18 lg:left-21 w-36 sm:w-42 lg:w-50 h-18 sm:h-20 lg:h-24"
             viewBox="0 0 300 80"
           >
             <defs>
@@ -85,17 +85,17 @@ function LeftSection() {
 
         {/* Teams div */}
         <div
-          className="relative translate-x-40 -translate-y-10 hover:scale-90 transition-all duration-900 ease-out"
+          className="relative translate-x-24 sm:translate-x-32 lg:translate-x-40 -translate-y-6 sm:-translate-y-8 lg:-translate-y-10 hover:scale-90 transition-all duration-900 ease-out"
           onMouseEnter={() => setAppHover("teams", "left")}
           onMouseLeave={clearHover}
         >
           <img
             src={teamsLogo}
             alt="Teams"
-            className="w-20 h-20 shadow-2xl rounded-xl shadow-lg rotate-10"
+            className="w-14 sm:w-16 lg:w-20 h-14 sm:h-16 lg:h-20 shadow-2xl rounded-xl shadow-lg rotate-10"
           />
           <svg
-            className="absolute top-5 left-20 w-32 h-16"
+            className="absolute top-3 sm:top-4 lg:top-5 left-14 sm:left-16 lg:left-20 w-24 sm:w-28 lg:w-32 h-12 sm:h-14 lg:h-16"
             viewBox="0 0 120 60"
           >
             <defs>
