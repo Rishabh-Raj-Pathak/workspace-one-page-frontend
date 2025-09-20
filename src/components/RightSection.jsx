@@ -2,14 +2,21 @@ import React from "react";
 import notionLogo from "../assets/notion.png";
 import gmailLogo from "../assets/mail.png";
 import calendarLogo from "../assets/calendar.png";
+import { useHover } from "../context/HoverContext";
 
 function RightSection() {
+  const { setAppHover, clearHover } = useHover();
+
   return (
     <div className="relative w-full h-full flex flex-col justify-center items-end">
       {/* Container for Notion, Gmail, Calendar */}
       <div className="relative">
         {/* Notion div */}
-        <div className="relative mb-16 -translate-x-25 hover:scale-90 transition-all duration-300">
+        <div
+          className="relative mb-16 -translate-x-25 hover:scale-90 transition-all duration-900 ease-out"
+          onMouseEnter={() => setAppHover("notion", "right")}
+          onMouseLeave={clearHover}
+        >
           <svg
             className="absolute top-20 right-20 w-50 h-24 -rotate-35 z-0"
             viewBox="0 0 240 100"
@@ -41,7 +48,11 @@ function RightSection() {
         </div>
 
         {/* Gmail div */}
-        <div className="relative mb-24 -translate-x-16 hover:scale-90 transition-all duration-300">
+        <div
+          className="relative mb-24 -translate-x-16 hover:scale-90 transition-all duration-900 ease-out"
+          onMouseEnter={() => setAppHover("gmail", "right")}
+          onMouseLeave={clearHover}
+        >
           <svg
             className="absolute top-10 right-24 w-56 h-24"
             viewBox="0 0 300 80"
@@ -73,7 +84,11 @@ function RightSection() {
         </div>
 
         {/* Calendar div */}
-        <div className="relative -translate-x-30 -translate-y-10 hover:scale-90 transition-all duration-300">
+        <div
+          className="relative -translate-x-30 -translate-y-10 hover:scale-90 transition-all duration-900 ease-out"
+          onMouseEnter={() => setAppHover("calendar", "right")}
+          onMouseLeave={clearHover}
+        >
           <svg
             className="absolute top-5 right-20 w-40 h-20"
             viewBox="0 0 160 80"

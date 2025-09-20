@@ -2,14 +2,21 @@ import React from "react";
 import dropboxLogo from "../assets/DropBox.png";
 import slackLogo from "../assets/SlackLogo.png";
 import teamsLogo from "../assets/teams.png";
+import { useHover } from "../context/HoverContext";
 
 function LeftSection() {
+  const { setAppHover, clearHover } = useHover();
+
   return (
     <div className="relative w-full h-full flex flex-col justify-center items-start">
       {/* Container for Dropbox, Slack, Teams */}
       <div className="relative">
         {/* Slack div */}
-        <div className="mb-16 translate-x-45 -translate-y-0 relative hover:scale-90 transition-all duration-300">
+        <div
+          className="mb-16 translate-x-45 -translate-y-0 relative hover:scale-90 transition-all duration-900 ease-out"
+          onMouseEnter={() => setAppHover("slack", "left")}
+          onMouseLeave={clearHover}
+        >
           <img
             src={slackLogo}
             alt="Slack"
@@ -41,7 +48,11 @@ function LeftSection() {
         </div>
 
         {/* Dropbox div */}
-        <div className="relative mb-24 translate-x-15 translate-y-5 hover:scale-90 transition-all duration-300">
+        <div
+          className="relative mb-24 translate-x-15 translate-y-5 hover:scale-90 transition-all duration-900 ease-out"
+          onMouseEnter={() => setAppHover("dropbox", "left")}
+          onMouseLeave={clearHover}
+        >
           <img
             src={dropboxLogo}
             alt="Dropbox"
@@ -73,7 +84,11 @@ function LeftSection() {
         </div>
 
         {/* Teams div */}
-        <div className="relative translate-x-40 -translate-y-10 hover:scale-90 transition-all duration-300">
+        <div
+          className="relative translate-x-40 -translate-y-10 hover:scale-90 transition-all duration-900 ease-out"
+          onMouseEnter={() => setAppHover("teams", "left")}
+          onMouseLeave={clearHover}
+        >
           <img
             src={teamsLogo}
             alt="Teams"
