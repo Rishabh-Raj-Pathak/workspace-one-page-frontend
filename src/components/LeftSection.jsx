@@ -19,9 +19,21 @@ function LeftSection() {
             className="absolute top-22 left-14 w-40 h-20 rotate-35 translate-y-3 -translate-x-5"
             viewBox="0 0 120 60"
           >
+            <defs>
+              <linearGradient
+                id="slackGradient"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stopColor="#9B59B6" stopOpacity="0.8" />
+                <stop offset="100%" stopColor="#E91E63" stopOpacity="0.6" />
+              </linearGradient>
+            </defs>
             <path
               d="M 0 20 C 40 50, 80 10, 120 25"
-              stroke="#60A5FA"
+              stroke="url(#slackGradient)"
               strokeWidth="2"
               fill="none"
             />
@@ -39,9 +51,21 @@ function LeftSection() {
             className="absolute top-1 left-21 w-50 h-24"
             viewBox="0 0 300 80"
           >
+            <defs>
+              <linearGradient
+                id="dropboxGradient"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stopColor="#3498DB" stopOpacity="0.7" />
+                <stop offset="100%" stopColor="#00BCD4" stopOpacity="0.5" />
+              </linearGradient>
+            </defs>
             <path
               d="M 0 40 C 40 0, 70 120, 400 60"
-              stroke="#60A5FA"
+              stroke="url(#dropboxGradient)"
               strokeWidth="2.5"
               fill="none"
             />
@@ -59,9 +83,21 @@ function LeftSection() {
             className="absolute top-5 left-20 w-32 h-16"
             viewBox="0 0 120 60"
           >
+            <defs>
+              <linearGradient
+                id="teamsGradient"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stopColor="#6C5CE7" stopOpacity="0.8" />
+                <stop offset="100%" stopColor="#A29BFE" stopOpacity="0.6" />
+              </linearGradient>
+            </defs>
             <path
               d="M 0 30 C 50 20, 70 40, 120 60"
-              stroke="#60A5FA"
+              stroke="url(#teamsGradient)"
               strokeWidth="2"
               fill="none"
             />
