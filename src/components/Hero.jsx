@@ -52,7 +52,7 @@ function Hero() {
   };
 
   return (
-    <div className="flex flex-col h-screen bg-[#F7F7F7] border-2 border-gray-200 shadow-md rounded-4xl mx-5 relative mb-10 min-h-[767px] overflow-hidden">
+    <div className="flex flex-col h-screen bg-[#F7F7F7] border-2 border-gray-200 shadow-md rounded-4xl mx-5 relative mb-10 min-h-[751px] overflow-hidden">
       {/* Dynamic background overlay */}
       {currentColors && (
         <div
@@ -62,7 +62,7 @@ function Hero() {
       )}
 
       {/* Header content section */}
-      <div className="flex flex-col items-center pt-10 lg:pt-20 relative z-10">
+      <div className="flex flex-col items-center pt-8 lg:pt-15 relative z-10">
         <div
           className={`text-6xl font-bold transition-all duration-600 ease-out pb-5 ${
             currentColors ? "" : "text-[#888B90]"
@@ -79,7 +79,7 @@ function Hero() {
       </div>
 
       {/* Middle section with Button - this will grow to fill available space */}
-      <div className="flex items-center justify-center pb-4 mt-8 mb-8">
+      <div className="flex items-center justify-center mt-8 mb-8">
         <Button />
       </div>
 

@@ -3,7 +3,7 @@ import logo from '../assets/logo.png'
 
 function Navbar() {
   return (
-    <div className='flex justify-between items-center py-5 px-14'>
+    <div className='flex justify-between items-center py-3 px-14'>
       <div className='flex items-center'>
         <img src={logo} alt="logo" className='w-7 h-10' />
         <span className='text-2xl font-bold ml-2 tracking-tightest'>Oneflow</span>
